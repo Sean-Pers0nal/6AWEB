@@ -1,0 +1,49 @@
+<div class="terminal-wrapper">
+  <div class="header">
+    <div class="brand">ANGULAR<span>_PIPES</span></div>
+    <div class="version">BUILD_2026.01</div>
+  </div>
+
+  <div class="industrial-grid">
+    <div class="unit hero">
+      <label>AsyncPipe</label>
+      <h1 class="clock">{{ time$ | async | date:'HH:mm:ss' }}</h1>
+      <span class="sub-label">REAL_TIME_SUBSCRIPTION_ACTIVE</span>
+    </div>
+
+    <div class="unit">
+      <label>DatePipe</label>
+      <div class="output">{{ presentDate | date:'fullDate' }}</div>
+    </div>
+
+    <div class="unit">
+      <label>CurrencyPipe</label>
+      <div class="output accent">{{ price | currency:'INR' }}</div>
+    </div>
+
+    <div class="unit">
+      <label>UpperCasePipe</label>
+      <div class="output uppercase">{{ message | uppercase }}</div>
+    </div>
+
+    <div class="unit">
+      <label>TitleCasePipe</label>
+      <div class="output">{{ message | titlecase }}</div>
+    </div>
+
+    <div class="unit">
+      <label>SlicePipe</label>
+      <div class="output">{{ fruits | slice:0:3 }}</div>
+    </div>
+
+    <div class="unit">
+      <label>DecimalPipe</label>
+      <div class="output">{{ decimalValue | number:'1.1-2' }}</div>
+    </div>
+
+    <div class="unit wide">
+      <label>JsonPipe</label>
+      <pre class="json-code">{{ jsonObj | json }}</pre>
+    </div>
+  </div>
+</div>
